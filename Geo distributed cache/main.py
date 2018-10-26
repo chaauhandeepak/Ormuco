@@ -12,6 +12,8 @@ if __name__ == '__main__':
     # Cache object
     cache = Cache()
 
+    print(cache.empty())
+
     print(str(cache.isEmpty()))
     for i, key in enumerate(Keys):
         if key in cache:

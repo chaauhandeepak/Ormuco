@@ -1,5 +1,4 @@
 import datetime
-import random
 
 class Cache:
 
@@ -8,29 +7,7 @@ class Cache:
         self.cache = {}
         self.MaxSize = 5
 
-    def update(self, key, value):
-        # Update cache and remove oldest item, when size reaches maximum
-        if key not in self.cache and len(self.cache) >= self.MaxSize:
-            self.removeOldCache()
-
-        self.cache[key] = {'Added time': datetime.datetime.now().isoformat(),
-                           'value': value}
-
-    def removeOldCache(self):
-        # Remove oldest item from cache
-        oldest_entry = None
-        for key in self.cache:
-            if oldest_entry is None:
-                oldest_entry = key
-            elif self.cache[key]['Added time'] < self.cache[oldest_entry]['Added time']:
-                oldest_entry = key
-        self.cache.pop(oldest_entry)
-
-    def __contains__(self, key):
-        # Returns Boolean value, whether key is in the cache
-        return key in self.cache
-
-    def isEmpty(self):
+    def empty(self):
         # checking, whether cache is Empty
         return self.cache == 0
 
@@ -38,5 +15,29 @@ class Cache:
         # Returns total size of cache
         return len(self.cache)
 
-    def viewCache(self):
+    def __contains__(self, key):
+        # Returns Boolean value, whether key is in the cache
+        return key in self.cache
+
+    def view(self):
+        # Returns cache dictionary
         return self.cache
+
+    def update(self, key, value):
+        # Update cache and remove oldest item, when size reaches maximum
+        if key not in self.cache and len(self.cache) >= self.MaxSize:
+            self.delete()
+
+        self.cache[key] = {'Added time': datetime.datetime.now().isoformat(),
+                           'value': value}
+
+    def delete(self):
+        # Remove oldest item from cache
+        old_entry = None
+        for key in self.cache:
+            if old_entry is None:
+                old_entry = key
+            elif self.cache[key]['Added time'] < self.cache[old_entry]['Added time']:
+                old_entry = key
+        self.cache.pop(old_entry)
+
