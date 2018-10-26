@@ -6,3 +6,11 @@ software library that accepts 2 version string as input and returns whether one 
 '
 
 _Instructions_
+1. Enter two number strings as arguments into class by creating an instance
+
+2. call functions greater, lesser or equal to verify the output
+
+_missing functions_
+1. software library build still in progress
+
+ 
