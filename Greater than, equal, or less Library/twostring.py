@@ -21,7 +21,3 @@ class ValueComparsions:
         condition=self.val1 == self.val2
         return "{0} is equal to {1}".format(self.val1,self.val2) if condition else \
                "{0} is not equal to {1}".format(self.val2,self.val1)
-
-
-
-
