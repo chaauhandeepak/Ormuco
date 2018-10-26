@@ -9,7 +9,7 @@ class Cache:
 
     def empty(self):
         # checking, whether cache is Empty
-        return self.cache == 0
+        return self.cache == {}
 
     def size(self):
         # Returns total size of cache
