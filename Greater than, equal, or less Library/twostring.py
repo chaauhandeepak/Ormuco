@@ -4,23 +4,23 @@ class ValueComparsions:
         self.val1 = float(valueOne)
         self.val2 = float(valueTwo)
 
+    # Greater than Function
     def greater(self):
-        if self.val1 > self.val2:
-            return str(self.val1) + ' is greater than ' + str(self.val2)
-        else:
-            return str(self.val2) + ' is greater than ' + str(self.val1)
+        condition=self.val1 > self.val2
+        return "{0} is greater than {1}".format(self.val1,self.val2) if condition else \
+               "{0} is greater than {1}".format(self.val2,self.val1)
 
-    def equal(self):
-        if self.val1 == self.val2:
-            return str(self.val1) + ' is equal to ' + str(self.val2)
-        else:
-            return str(self.val1) + ' not equal ' + str(self.val2)
-
+    # Less than Function
     def lesser(self):
-        if self.val1 < self.val2:
-            return str(self.val1) + ' is lesser than ' + str(self.val2)
-        else:
-            return str(self.val2) + ' is lesser than ' + str(self.val1)
+        condition=self.val1 < self.val2
+        return "{0} is lesser than {1}".format(self.val1,self.val2) if condition else \
+               "{0} is lesser than {1}".format(self.val2,self.val1)
+
+    # Equal to  Function
+    def equal(self):
+        condition=self.val1 == self.val2
+        return "{0} is equal to {1}".format(self.val1,self.val2) if condition else \
+               "{0} is not equal to {1}".format(self.val2,self.val1)
 
 
 
