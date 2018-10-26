@@ -4,6 +4,6 @@
 3. First In First out logic is implemented in cache design
 4. date time is automatically attached to values, when updated into cache
 
-- Missing Functionalities : Geo distributed methods and functions 
+- Missing functionalities : Geo distributed methods and functions 
 
 `libraries used: Random, Datetime`

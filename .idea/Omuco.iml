@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/2 Lines Overlap on X-axis" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/2  Strings numbers" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/2  Strings numbers/code" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Geo distributed cache" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

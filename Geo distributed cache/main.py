@@ -19,13 +19,13 @@ if __name__ == '__main__':
             continue
         else:
             value = ''.join([random.choice(sites)])
-            print('\t',value)
+            print('\t', value)
             cache.update(key, value)
 
         print("{0}.Iteration, #{1} cached entries" .format(i+1, cache.size()))
 
     # Cache List
-    print('\n\n\t','*'*10,' CACHE LIST ','*'*10)
+    print('\n\n\t', '*'*10, ' CACHE LIST ', '*'*10)
     for k, v in cache.view().items():
-        print("{0} : {1}".format(k,v))
+        print("{0} : {1}".format(k, v))
     print('_' * 60)
