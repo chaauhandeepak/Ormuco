@@ -17,7 +17,7 @@ if __name__ == '__main__':
         line2 = tuple(line2)
 
         # Calling function Overlap
-        result = overlap(line1,line2)
+        result = overlap(line1, line2)
         print(result)
 
     # Exception handling for entering invalid inputs
