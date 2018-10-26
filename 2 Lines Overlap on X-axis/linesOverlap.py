@@ -4,10 +4,11 @@ returns whether they overlap. As an example, (1,5) and (2,6) overlaps
 but not (1,5) and (6,8).
 '''
 
-# Function that accepts two lines on x-axis
-def OverLap(line1,line2):
-    Found = False                # Flag
 
+# Function that accepts two lines on x-axis
+def overlap(line1,line2):
+
+    found = False                # Flag
     # result variable
     result = str(line1) + ' & ' + str(line2) + ' doesn\'t overlaps on x-axis'
     pos=0                        # Index position of Lines
@@ -15,18 +16,18 @@ def OverLap(line1,line2):
     for i in range(2):
         # Method evaluates negative integers
         if line1[i] < 0 and line2[i] < 0:
-            while pos < len(line1) and not Found:
+            while pos < len(line1) and not found:
                 if line2[pos] >= line1[0] or line2[pos] >= line1[1]:
-                    Found = True
+                    found = True
                     result = str(line1) + ' & ' + str(line2) + ' overlaps on x-axis'
                 else:
                     pos += 1
 
         # Method evaluates positive integers
         else:
-            while pos < len(line1) and not Found:
+            while pos < len(line1) and not found:
                 if line2[pos] <= line1[0] or line2[pos] <= line1[1]:
-                    Found = True
+                    found = True
                     result = str(line1) + ' & ' + str(line2) + ' overlaps on x-axis'
                 else:
                     pos += 1

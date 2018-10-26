@@ -1,5 +1,4 @@
-
-from linesOverlap import OverLap
+from linesOverlap import overlap
 
 # Main method
 if __name__ == '__main__':
@@ -18,7 +17,7 @@ if __name__ == '__main__':
         line2 = tuple(line2)
 
         # Calling function Overlap
-        result = OverLap(line1,line2)
+        result = overlap(line1,line2)
         print(result)
 
     # Exception handling for entering invalid inputs
