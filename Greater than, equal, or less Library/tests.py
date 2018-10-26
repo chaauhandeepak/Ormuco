@@ -1,44 +1,44 @@
 import unittest
-from module import ValueComparsions
+from twostring import ValueComparsions
 
 class TestsForStrings(unittest.TestCase):
 
     def test1_ForGreater(self):
-        Strings=ValueComparsions('1.1','1.3')
-        self.assertEqual(Strings.Greater(),'1.3 is greater than 1.1')
+        strings = ValueComparsions('1.1','1.3')
+        self.assertEqual(strings.greater(),'1.3 is greater than 1.1')
 
     def test2_ForGreater(self):
-        Strings=ValueComparsions('1.1','1.3')
-        self.assertNotEqual(Strings.Greater(),'1.1 is greater than 1.3')
+        strings = ValueComparsions('1.1','1.3')
+        self.assertNotEqual(strings.greater(),'1.1 is greater than 1.3')
 
     def test3_ForGreater(self):
-        Strings=ValueComparsions('1.1','1.3')
-        self.assertTrue(Strings.Greater(),'1.3 is greater than 1.1')
+        strings = ValueComparsions('1.1','1.3')
+        self.assertTrue(strings.greater(),'1.3 is greater than 1.1')
 
     def test1_ForLesser(self):
-        Strings=ValueComparsions('1.1','1.3')
-        self.assertEqual(Strings.Lesser(),'1.1 is lesser than 1.3')
+        strings = ValueComparsions('1.1','1.3')
+        self.assertEqual(strings.lesser(),'1.1 is lesser than 1.3')
 
     def test2_ForLesser(self):
-        Strings=ValueComparsions('1.1','1.3')
-        self.assertNotEqual(Strings.Lesser(),'1.3 is lesser than 1.1')
+        strings = ValueComparsions('1.1','1.3')
+        self.assertNotEqual(strings.lesser(),'1.3 is lesser than 1.1')
 
     def test3_ForLesser(self):
-        Strings=ValueComparsions('1.1','1.3')
-        self.assertTrue(Strings.Lesser(),'1.1 is lesser than 1.3')
+        strings = ValueComparsions('1.1','1.3')
+        self.assertTrue(strings.lesser(),'1.1 is lesser than 1.3')
 
 
     def test1_ForEqual(self):
-        Strings=ValueComparsions('1.1','1.3')
-        self.assertEqual(Strings.Equal(),'1.1 not equal 1.3')
+        strings = ValueComparsions('1.1','1.3')
+        self.assertEqual(strings.equal(),'1.1 not equal 1.3')
 
     def test2_ForEqual(self):
-        Strings=ValueComparsions('1.1','1.1')
-        self.assertEqual(Strings.Equal(),'1.1 is equal to 1.1')
+        strings = ValueComparsions('1.1','1.1')
+        self.assertEqual(strings.equal(),'1.1 is equal to 1.1')
 
     def test3_ForEqual(self):
-        Strings=ValueComparsions('1.1','1.1')
-        self.assertNotEqual(Strings.Equal(),'1.1 not equal 1.3')
+        strings = ValueComparsions('1.1','1.1')
+        self.assertNotEqual(strings.equal(),'1.1 not equal 1.3')
 
 
 
