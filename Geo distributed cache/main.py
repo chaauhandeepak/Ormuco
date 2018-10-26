@@ -25,4 +25,4 @@ if __name__ == '__main__':
 
     print('\n\n\t','*'*10,' CACHE LIST ','*'*10)
     for k, v in cache.viewCache().items():
-        print("{0} : {1}".format(k, v))
+        print("{0} : {1}".format(k,v))
