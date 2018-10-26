@@ -2,8 +2,9 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/2 Lines Overlap on X-axis" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2  Strings numbers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2  Strings numbers/code" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
