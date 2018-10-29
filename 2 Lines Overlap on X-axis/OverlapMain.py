@@ -6,10 +6,10 @@ if __name__ == '__main__':
         line1=[]             # Empty line 1
         line2=[]             # Empty line 2
         for i in range(2):
-            co_ordinate1 = float(input('{0}.Enter co-ordinates for Line 1: \n'.format(i+1)))
+            co_ordinate1 = float(input('{0}.Enter co-ordinate for Line 1: \n'.format(i+1)))
             line1.append(co_ordinate1)
         for i in range(2):
-            co_ordinate2 = float(input('{0}.Enter co-ordinates for Line 2: \n'.format(i + 1)))
+            co_ordinate2 = float(input('{0}.Enter co-ordinate for Line 2: \n'.format(i + 1)))
             line2.append(co_ordinate2)
 
         # Lines --> Tuple
